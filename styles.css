@@ -1,0 +1,128 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  max-width: 500px;
+  margin: 10% auto 0;
+}
+
+.orange, .blue, .grey{
+  width: 60%;
+  padding: 10%;
+}
+
+.orange{
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 12px 12px 0 0;
+}
+
+.blue{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.grey{
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 12px 12px;
+}
+
+h1{
+  font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%);
+}
+
+p{
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5em;
+}
+
+button{
+  border: 2px solid white;
+  border-radius: 9em;
+  padding: 3% 8%;
+  transition: 0.5s;
+}
+
+.orange button{
+  color: hsl(31, 77%, 52%);
+}
+
+.orange button:hover{
+  color: white;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.blue button{
+  color: hsl(184, 100%, 22%);
+}
+
+.blue button:hover{
+  color: white;
+  background-color: hsl(184, 100%, 22%);
+}
+
+.grey button{
+  color: hsl(179, 100%, 13%);
+}
+
+.grey button:hover{
+  color: white;
+  background-color: hsl(179, 100%, 13%);
+}
+
+@media (orientation: landscape){
+  .container{
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+  }
+  
+  .orange, .blue, .grey{
+    width: 60%;
+    padding: 5%;
+  }
+  
+  .orange{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 12px 0 0 12px;
+  }
+  
+  .blue{
+    background-color: hsl(184, 100%, 22%);
+  }
+  
+  .grey{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 12px 12px 0;
+  }
+  
+  h1{
+    padding: 8% 0;
+  }
+  
+  p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 300;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5em;
+    margin-bottom: 40%;
+  }
+  
+  button{
+    width: 70%;
+    padding: 7% 8%;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+}
+
+/*justify content center didn't work
+  how to set button color to div color without changing each individually
+*/
